@@ -109,3 +109,154 @@ The recovered password was entered into the protected PDF to verify that the pas
 **Captured Flag:**
 
 `nw{cybersecurity_flag_captured_2608}`
+
+---
+
+## 🌐 Module 2: Password Cracking with NetworkWalks Tools
+
+### Task 1 — Extract the PDF Hash
+
+The protected `My-Locked-PDF2.pdf` file was uploaded to the NetworkWalks Hash Calculator to extract a crackable PDF password hash.
+
+![PDF 2 Hash Calculator](./pdf2-hash-calculator.png)
+
+**Result:** The PDF was identified as encrypted, and a crackable `$pdf$...` hash was extracted.
+
+---
+
+### Task 2 — Copy the Extracted PDF Hash
+
+The extracted PDF hash was copied from the NetworkWalks Hash Calculator for use with the NetworkWalks Password Cracker.
+
+![PDF 2 Hash Extracted](./pdf2-hash-extracted.png)
+
+**Result:** The extracted PDF hash was successfully copied for the password-cracking process.
+
+---
+
+### Task 3 — Load the Hash into the Password Cracker
+
+The extracted PDF hash was pasted into the NetworkWalks Password Cracker before starting the password-recovery process.
+
+![Password Cracker Hash Loaded](./password-cracker-hash-loaded.png)
+
+**Result:** The PDF hash was successfully loaded into the password cracker.
+
+---
+
+### Task 4 — Crack the PDF Password
+
+The NetworkWalks Password Cracker was started using the available wordlist to recover the password for the protected PDF.
+
+![PDF 2 Password Cracked](./pdf2-password-cracked-success.png)
+
+**Result:** The password was successfully recovered as:
+
+`password1`
+
+The tool displayed:
+
+`PASSWORD CRACKED SUCCESSFULLY`
+
+---
+
+### Task 5 — Enter the Recovered Password
+
+The recovered password was entered into the protected `My-Locked-PDF2.pdf` file to verify the recovered password.
+
+![PDF 2 Password Entry](./pdf2-password-entry.png)
+
+**Result:** The recovered password was accepted by the protected PDF.
+
+---
+
+### Task 6 — Verify the Unlocked PDF
+
+The protected PDF was opened using the recovered password to confirm successful password recovery.
+
+![Locked PDF 2 Unlocked](./lockedpdf2-unlocked-success.png)
+
+**Result:** The PDF was successfully unlocked and the NetworkWalks training flag was displayed.
+
+---
+
+## 👀 Observations
+
+- Password-protected PDF files can be converted into crackable hash formats.
+- John the Ripper can be used to recover passwords from supported password hashes.
+- Johnny provides a graphical interface for working with John the Ripper.
+- The NetworkWalks Hash Calculator can extract hashes from encrypted PDF files.
+- The NetworkWalks Password Cracker can use a wordlist to attempt password recovery.
+- Successful password recovery can be verified by opening the protected PDF with the recovered password.
+- Weak and commonly used passwords can be recovered more easily using dictionary-based attacks.
+
+---
+
+## 💡 Insights
+
+- Password strength plays an important role in protecting sensitive files.
+- Hash extraction is an important step when performing password recovery on supported file formats.
+- Wordlists can be effective when passwords are simple or commonly used.
+- Password-cracking tools should only be used in authorized and controlled environments.
+- Strong, unique passwords can help reduce the risk of successful password-recovery attacks.
+
+---
+
+## 🛠️ Troubleshooting
+
+- Had difficulty locating the `john.exe` executable file while configuring John the Ripper in Johnny.
+- Checked the extracted John the Ripper package and located the correct `john.exe` executable.
+- Selected the correct `john.exe` file from the extracted package and configured its path in Johnny.
+- Verified that Johnny was using the John the Ripper executable before proceeding with the password-recovery process.
+- Ensured that the extracted PDF hash was saved correctly in `hash1.txt`.
+- Verified that the correct hash was loaded into the password-cracking tools.
+- Confirmed the recovered passwords by entering them into the corresponding protected PDF files.
+- Checked the extracted hash format before proceeding with the password-recovery process.
+
+---
+
+## 📚 What I Learned
+
+Through this practical, I learned:
+
+- How password-protected PDF files can be analyzed in an authorized lab environment.
+- How to extract crackable PDF password hashes.
+- How to configure and use John the Ripper through the Johnny GUI.
+- How to save and load password hashes for password-recovery exercises.
+- How dictionary-based password recovery works.
+- How to use the NetworkWalks Hash Calculator.
+- How to use the NetworkWalks Password Cracker.
+- How to verify recovered passwords by opening protected PDF files.
+- The importance of using strong and unique passwords to improve file security.
+
+---
+
+## 🔗 Resources
+
+- [Openwall — John the Ripper](https://www.openwall.com/john/)
+- [Openwall — Johnny GUI](https://openwall.info/wiki/john/johnny)
+- [Networkwalks — Hash Calculator](https://networkwalks.com/hash-calculator/)
+- [Networkwalks — Password Cracker](https://networkwalks.com/password-cracker/)
+
+---
+
+## 👤 Author
+
+**Shakthi S P**
+
+Cybersecurity Trainee  
+NetworkWalks — Batch B083
+
+**GitHub:** [NETWORKWALKS-B083-WK3-CYBERSECURITY](https://github.com/shakthisp111/NETWORKWALKS-B083-WK3-CYBERSECURITY)
+
+**LinkedIn:** [Shakthi S P](https://www.linkedin.com/in/shakthi-sp-7309b6204)
+
+---
+
+## ⚠️ Disclaimer
+
+This project was completed as part of an authorized cybersecurity training program.
+
+All password-recovery and password-cracking activities were performed only on provided laboratory files and within the designated training environment.
+
+These techniques should only be used on systems, files, and accounts for which proper authorization has been obtained.
