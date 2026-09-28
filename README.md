@@ -50,8 +50,6 @@ The Johnny graphical interface for John the Ripper was installed and launched to
 
 **Result:** Johnny was successfully installed and launched.
 
-**Result:** Johnny was successfully launched and the John the Ripper executable configuration screen was displayed.
-
 ---
 
 ### Task 2 — Configure John the Ripper
@@ -111,6 +109,3 @@ The recovered password was entered into the protected PDF to verify that the pas
 **Captured Flag:**
 
 `nw{cybersecurity_flag_captured_2608}`
-
----
-
