@@ -46,7 +46,9 @@ The main objectives of this practical were to:
 
 The Johnny graphical interface for John the Ripper was installed and launched to begin the PDF password-recovery exercise.
 
-![Johnny](./jhonny-install-success.png)
+![Johnny](./johnny-launch.png)
+
+**Result:** Johnny was successfully installed and launched.
 
 **Result:** Johnny was successfully launched and the John the Ripper executable configuration screen was displayed.
 
@@ -54,9 +56,11 @@ The Johnny graphical interface for John the Ripper was installed and launched to
 
 ### Task 2 — Configure John the Ripper
 
-The John the Ripper executable from the extracted JtR package was configured in Johnny by selecting the appropriate `john.exe` file.
+The John the Ripper executable was configured in Johnny by selecting the appropriate `john.exe` file from the extracted JtR package.
 
-**Result:** Johnny successfully detected the John the Ripper executable and was ready for the password-recovery process.
+![Johnny Configuration](./jhonny-install-success.png)
+
+**Result:** Johnny was configured to use the John the Ripper executable successfully.
 
 ---
 
