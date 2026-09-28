@@ -40,25 +40,13 @@ The main objectives of this practical were to:
 - Document the complete practical workflow using screenshots.
 - Understand the importance of strong and unique passwords.
 
----
-
-# 🧪 Project Modules
-
-## PM1 — Password Cracking with John the Ripper
-
-Project Module 1 focused on using **John the Ripper through the Johnny graphical interface**.
-
-Johnny was installed and configured with the John the Ripper executable from the extracted JtR package.
-
-The protected PDF hash was then loaded into Johnny and the password-recovery process was performed.
-
 ## 🧩 Module 1: Password Cracking with JTR
 
 ### Task 1 — Install and Launch Johnny
 
 The Johnny graphical interface for John the Ripper was installed and launched to begin the PDF password-recovery exercise.
 
-[Johnny](./jhonny-install-success.png)
+![Johnny](./jhonny-install-success.png)
 
 **Result:** Johnny was successfully launched and the John the Ripper executable configuration screen was displayed.
 
@@ -68,35 +56,35 @@ The Johnny graphical interface for John the Ripper was installed and launched to
 
 The John the Ripper executable from the extracted JtR package was configured in Johnny by selecting the appropriate `john.exe` file.
 
-**Result:** Johnny was configured to use the John the Ripper executable successfully.
+**Result:** Johnny successfully detected the John the Ripper executable and was ready for the password-recovery process.
 
 ---
 
 ### Task 3 — Extract the PDF Hash
 
-The protected PDF was processed using an online PDF hash extraction utility to generate a crackable PDF hash.
+The protected PDF was uploaded to a PDF hash extraction utility to generate a crackable PDF hash.
 
-[PDF Hash Extractor](./pdf-hash-extracted.png)
+![PDF Hash Extracted](./pdf-hash-extracted.png)
 
-**Result:** A `$pdf$...` formatted hash was successfully generated.
+**Result:** A `$pdf$...` formatted hash was successfully extracted from the protected PDF.
 
 ---
 
 ### Task 4 — Save the Extracted Hash
 
-The extracted PDF hash was copied into a text file and saved as `hash1.txt` for use with John the Ripper.
+The extracted PDF hash was copied and saved as a text file named `hash1.txt` for use with John the Ripper.
 
-[Saved Hash File](./hash1-txt-saved.png)
+![Hash Saved as TXT](./hash1-txt-saved.png)
 
-**Result:** The PDF hash was successfully saved as `hash1.txt`.
+**Result:** The extracted PDF hash was successfully saved as `hash1.txt`.
 
 ---
 
 ### Task 5 — Crack the PDF Password Using Johnny
 
-The saved PDF hash was loaded into Johnny and John the Ripper was used to perform the password-recovery process.
+The saved PDF hash was loaded into Johnny and John the Ripper was used to perform the password-recovery process against the provided training PDF.
 
-[Password Recovery](./jtr-password-success.png)
+![JTR Password Success](./jtr-password-success.png)
 
 **Result:** The password was successfully recovered as:
 
@@ -110,12 +98,15 @@ Johnny displayed:
 
 ### Task 6 — Verify the Recovered Password
 
-The recovered password was entered into the protected PDF to verify successful password recovery.
+The recovered password was entered into the protected PDF to verify that the password was correct.
 
-[Unlocked PDF](./lockedpdf1-unlocked-success.png)
+![Locked PDF Unlocked](./lockedpdf1-unlocked-success.png)
 
 **Result:** The protected PDF was successfully unlocked and the NetworkWalks training flag was displayed.
 
 **Captured Flag:**
 
 `nw{cybersecurity_flag_captured_2608}`
+
+---
+
